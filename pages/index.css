@@ -117,3 +117,5 @@
 @import url(../blocks/footer/__author/footer__author.css);
 
 /*выше подключили стили для подвала сайта*/
+
+@import url(../blocks/form/form.css);

@@ -6,6 +6,7 @@
   <meta name="description" content="Страница про эффективные подходы к обучению">
   <meta name="author" content="Иван Жубров">
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./pages/fonts.css">
   <link rel="icon" href="./images/kaufman/kaufman-triangle.svg">
   <title>Научиться учиться</title>
 </head>
@@ -231,6 +232,92 @@
           </li>
         </ul>
       </section>
+
+      <!--<div class="globe-container">
+        <div class="globe">
+            <div class="globe-sphere"></div>
+            <div class="globe-outer-shadow"></div>
+            <div class="globe-worldmap">
+                <div class="globe-worldmap-back"></div>
+                <div class="globe-worldmap-front"></div>
+            </div>
+            <div class="globe-inner-shadow"></div>
+        </div>
+    </div>-->
+    <section class="main-form">
+    <form class="form main-form__form">
+      <fieldset class="form__contact-info">
+        <h2 class="form__heading">Контактные данные</h2>
+        <label for="first-name" class="form__label">Имя</label>
+        <input class="form__item" type="text" id="first-name" name="first-name" placeholder="Введите имя" required>
+
+        <label for="last-name" class="form__label">Фамилия</label>
+        <input class="form__item" type="text" id="first-name" name="last-name" placeholder="Введите фамилию" required>
+
+        <label for="e-mail" class="form__label">E-mail</label>
+        <input class="form__item" type="email" id="e-mail" name="e-mail" placeholder="Введите эл. почту" required>
+
+        <label for="additional-information" class="form__label">О себе</label>
+        <textarea class='form__item form__item_el_textarea' name="additional-information" id="additional-information" placeholder="Дополнительная информация о вас"></textarea>
+    </fieldset>
+    <div class="form__line"></div>
+    <fieldset class="form__choice-field">
+      <label for="education-select" class="form__label">Образование</label>
+      <select class="form__item form__item_el_education" name="education-select" id="education-select">
+        <option value="primary education">Начальное</option>
+        <option value="secondary education">Среднее</option>
+        <option value="higher education">Высшее</option>
+      </select>
+      <!-- Radio box-->
+      <label class="form__label form__label_type_box">Возраст</label>
+      <label for="young" class="form__label_choiсe">
+        <input type="radio" class="form__item_el_box" name="age" id="young" value="young"checked>
+        <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+        Младше 20 лет
+      </label>
+
+      <label for="middle-age" class="form__label_choiсe">
+        <input type="radio" class="form__item_el_box" name="age" id="middle-age" value="middle-age" >
+        <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+        От 20 до 40 лет
+      </label>
+
+      <label for="older" class="form__label_choiсe">
+        <input type="radio" class="form__item_el_box" name="age" id="older" value="older">
+        <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+        Старше 40 лет
+      </label>
+
+      <!-- Check box-->
+
+      <label class="form__label form__label_type_box">Владение иностранными языками</label>
+      <label for="eng" class="form__label_choiсe">
+        <input type="checkbox" class="form__item_el_box" name="languages" id="eng" value="eng">
+        <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+        Английский
+      </label>
+      <label for="fr" class="form__label_choiсe">
+        <input type="checkbox" class="form__item_el_box" name="languages" id="fr" value="fr">
+        <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+        Французский
+      </label>
+      <label for="de" class="form__label_choiсe">
+        <input type="checkbox" class="form__item_el_box" name="languages" id="de" value="de">
+        <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+        Немецкий
+      </label>
+
+    </fieldset>
+
+
+
+    <fieldset class="form__handlers">
+      <button type="submit" class="form__button">Отправить</button>
+      <button type="reset" class="form__button">Сбросить</button>
+    </fieldset>
+    </form>
+  </section>
+
     </main>
     <footer class="footer">
       <div class="footer__columns">
