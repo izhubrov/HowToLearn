@@ -1,9 +1,29 @@
 .header__title {
-  width: 730px;
+  max-width: 540px;
   font-size: 102px;
   font-weight: 700;
+  line-height: 1.07;
   margin: 0;
-  padding: 0 0 0 64px;
-  line-height: 96px;
+  padding-left: 64px;
 }
-/*Выше определили расположение и стили заголовка*/
+
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-size: 84px;
+    line-height: 1.09;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header__title {
+    padding-left: 24px;
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header__title {
+    font-size: 56px;
+  }
+}

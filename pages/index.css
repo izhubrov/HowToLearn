@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__container/page__container.css);
 
 /*выше подключили стили извне и общие стили для всей страницы*/
 
@@ -23,7 +24,6 @@
 /*выше подключили анимацию вращения*/
 
 @import url(../blocks/content/content.css);
-@import url(../blocks/content/__techniques/content__techniques.css);
 
 /*выше подключили стили контента*/
 

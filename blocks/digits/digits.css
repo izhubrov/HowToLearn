@@ -5,3 +5,9 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media screen and (max-width: 670px) {
+  .digits {
+    padding: 60px 0;
+  }
+}

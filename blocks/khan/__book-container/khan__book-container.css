@@ -3,6 +3,12 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items:flex-start;
+  align-items: flex-start;
   flex-flow: hidden;
+}
+
+@media screen and (max-width: 1040px) {
+  .khan__book-container {
+    flex-direction: column;
+  }
 }

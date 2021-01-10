@@ -1,8 +1,14 @@
 .feynman__portrait {
-  width: 867px;
-  height: 636px;
+  max-width: 867px;
+  max-height: 636px;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index:-1;
+}
+
+@media screen and (max-width: 1280px) {
+  .feynman__portrait {
+    max-width: calc(100vw*867/1280);
+  }
 }

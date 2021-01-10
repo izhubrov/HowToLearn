@@ -4,3 +4,10 @@
   display:flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 670px) {
+  .description {
+    padding-top: 40px;
+    justify-content: flex-start;
+  }
+}

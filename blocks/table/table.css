@@ -1,9 +1,30 @@
 .table {
   margin:0;
-  padding:0;
+  padding: 60px 0 0;
   list-style:none;
-  width: 1100px;
-  display: flex;
+  max-width: 1100px;
+  row-gap: 60px;
+  column-gap: calc(100px/3);
+  display: grid;
   justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(4,250px);
 }
+
+@media screen and (max-width: 1148px) {
+  .table {
+    grid-template-columns: repeat(3,250px);
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .table {
+    grid-template-columns: repeat(2,250px);
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .table {
+    grid-template-columns: 250px;
+  }
+}
+

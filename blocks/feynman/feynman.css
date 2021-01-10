@@ -9,3 +9,16 @@
   position: relative;
   z-index:1;
 }
+
+@media screen and (max-width: 786px) {
+  .feynman {
+    min-height: unset;
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .feynman {
+    padding: 60px 0 0;
+  }
+}
