@@ -1,9 +1,53 @@
 .table {
   margin:0;
-  padding:0;
+  padding: 60px 0 0;
   list-style:none;
-  width: 1100px;
-  display: flex;
+  max-width: 1100px;
+  row-gap: 60px;
+  column-gap: calc(100px/3);
+  display: grid;
   justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(4,250px);
+}
+
+.kaufman .table {
+  grid-template-columns: repeat(5,200px);
+}
+
+@media screen and (max-width: 1200px) {
+  .table {
+    grid-template-columns: repeat(3,250px);
+  }
+
+  .kaufman .table {
+    grid-template-columns: repeat(4,200px);
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .table {
+    grid-template-columns: repeat(2,250px);
+  }
+
+  .kaufman .table {
+    grid-template-columns: repeat(3,200px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .table {
+    grid-template-columns: 250px;
+
+  }
+
+  .kaufman .table {
+    grid-template-columns: repeat(2,200px);
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .kaufman .table {
+    grid-template-columns: 200px;
+  }
 }

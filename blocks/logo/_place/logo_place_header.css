@@ -4,4 +4,10 @@
   top:30px;
   left:64px;
 }
-/*Выше определили расположение логотипа*/
+
+@media screen and (max-width: 670px) {
+  .logo_place_header {
+    left: 24px;
+  }
+}
+

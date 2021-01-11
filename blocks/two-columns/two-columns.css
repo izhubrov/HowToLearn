@@ -1,6 +1,17 @@
 .two-columns {
   padding:0;
+  max-width: 1280px;
   width: 80%;
   display:flex;
   justify-content:space-between;
+}
+
+@media screen and (max-width: 670px) {
+  .two-columns {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 24px; 
+  }
 }

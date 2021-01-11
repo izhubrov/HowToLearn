@@ -1,10 +1,30 @@
 .video__iframes {
   margin: 0;
   padding: 50px 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2,515px);
+  grid-template-rows: 316px;
+  gap: 20px;
 }
 
+@media screen and (max-width: 1096px) {
+  .video__iframes {
+    grid-template-columns: repeat(2,calc((100vw - 68px)/2));
+    grid-template-rows: calc((316/515)*calc((100vw - 68px)/2));
+  }
+}
+@media screen and (max-width: 786px)
+{
+  .video__iframes {
+    grid-template-columns: 515px;
+    grid-template-rows: repeat(2,316px);
+  }
+}
 
+@media screen and (max-width: 563px) {
+  .video__iframes {
+    grid-template-columns: calc(100vw - 48px);
+    grid-template-rows: repeat(2,calc((316/515)*calc(100vw - 48px)));
+  }
+}

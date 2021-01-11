@@ -1,6 +1,13 @@
 .description {
-  margin:0;
   padding-top: 100px;
   display:flex;
   justify-content: center;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 670px) {
+  .description {
+    padding-top: 40px;
+    justify-content: flex-start;
+  }
 }

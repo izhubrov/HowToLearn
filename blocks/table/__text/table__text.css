@@ -8,3 +8,9 @@
 .table__text:last-of-type {
   margin: 0;
 }
+
+@media screen and (max-width: 700px) {
+  .table__text {
+    text-align: center;
+  }
+}

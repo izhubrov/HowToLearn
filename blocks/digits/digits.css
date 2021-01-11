@@ -1,7 +1,13 @@
 .digits {
-  margin:0;
   display:flex;
   padding: 100px 0;
   align-items: center;
   flex-direction: column;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 670px) {
+  .digits {
+    padding: 60px 0;
+  }
 }

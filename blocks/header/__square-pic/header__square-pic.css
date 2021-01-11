@@ -1,9 +1,24 @@
 .header__square-pic {
   background-color: #2f80ed;
-  height: 568px;
-  width: 568px;
+  width: calc(0.355*100vw);
+  height: calc(0.355*100vw);
+  max-width: 698px;
+  max-height: 698px;
+  min-width: 348px;
+  min-height: 348px;
   position: absolute;
   top: 64px;
   right: 0;
   z-index:-2;
+}
+
+@media screen and (max-width: 368px)
+{
+  .header__square-pic {
+    min-width: 0;
+    min-height: 0;
+    width: 100vw;
+    height: 100vw;
+
+  }
 }
