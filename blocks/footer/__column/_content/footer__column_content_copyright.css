@@ -3,3 +3,17 @@
   justify-content: space-between;
   color:white;
 }
+
+@media screen and (max-width: 1120px) {
+  .footer__column_content_copyright {
+    flex-basis: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__column_content_copyright {
+    justify-content: flex-start;
+    flex-basis:unset;
+    padding-bottom: 20px;
+  }
+}
