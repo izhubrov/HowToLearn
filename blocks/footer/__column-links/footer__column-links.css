@@ -10,3 +10,9 @@
   list-style: none;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 600px) {
+  .footer__column-links {
+    padding: 10px 0 40px;
+  }
+}

@@ -4,4 +4,11 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 800px) {
+  .resources {
+    padding: 60px 0 60px;
+  }
 }
