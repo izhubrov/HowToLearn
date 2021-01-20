@@ -207,3 +207,11 @@
 .form__button[type="reset"] {
   background-color: rgba(228, 100, 100, 0.644);
 }
+
+@media screen and (max-width: 600px) {
+  .form {
+    margin: inherit;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
